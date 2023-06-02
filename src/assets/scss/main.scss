@@ -1,0 +1,16 @@
+// Import component styles
+@import "./components/header";
+@import "./components/primarybtn";
+@import "./components/footer";
+@import "./components/signup";
+
+// import Global styles
+@import "./base";
+// import pages styles
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/shop";
+@import "./pages/singleProduct";
+@import "./pages/myAccount";
+@import "./pages/newsletter";
+@import "./pages/shoppingnbag";

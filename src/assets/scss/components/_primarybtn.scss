@@ -1,0 +1,24 @@
+.buttonTertiary {
+    border: 1px solid #fff;
+    font-family: gotham, Sans-Serif;
+    min-width: 10rem;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    transition: 0.2s all ease-out;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    &:hover{
+      transition: 0.2s all ease-out;
+      background: #272727;
+    }
+  }

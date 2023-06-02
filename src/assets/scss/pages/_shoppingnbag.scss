@@ -1,0 +1,168 @@
+.shoppingBag {
+  width: 100%;
+  background-color: #fff;
+  padding: 100px 0;
+  .container {
+    padding: 1.25rem;
+    .backToShop {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      
+        .shopBtn {
+          font-family: gotham, Sans-Serif;
+          background: 0 0;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          min-width: 10rem;
+          display: inline-block;
+          padding: 1rem 1.2rem;
+          margin-bottom: 1rem;
+          font-weight: 700;
+          font-size: 0.75rem;
+          line-height: 1.2;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-align: center;
+          background-color: transparent;
+          transition: 0.2s all ease-out;
+          cursor: pointer;
+          span{
+            padding-right: 5px;
+          }
+        }
+      
+    }
+    .shoppingTitle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .mainTitle {
+        font-size: 3rem;
+        font-family: adobe-garamond-pro, times new roman, Serif;
+        line-height: 1.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      strong {
+        font-weight: bold;
+      }
+      .shoppingCart {
+        margin-top: 4rem;
+        padding: 2rem 4rem;
+        border: 1px solid #e3e3e3;
+        &.hide{
+          display: none;
+        }
+        .shoppingCartPage {
+          padding: 0;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          .shoppingCartItem {
+            border-bottom: 1px solid #e6e6e6;
+            display: flex;
+            align-items: flex-start;
+            .cartImage {
+              width: auto;
+              margin-right: 1rem;
+              flex: 0 1 auto;
+              padding: 10px;
+              img {
+                width: 100%;
+                max-height: 250px;
+                object-fit: contain;
+              }
+            }
+            .cartTitle {
+              width: 25%;
+              margin-right: 2rem;
+              margin-top: 1rem;
+              width: 60%;
+              font-family: "adobe-garamond-pro", times new roman, Serif;
+              line-height: 1.2em;
+              font-weight: 400;
+              text-transform: uppercase;
+              font-size: 1.5rem;
+              text-align: center;
+            }
+          }
+          .cartDetails {
+            width: 40%;
+            flex: 1 0 auto;
+            padding: 0;
+            margin: 1rem 0 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .itemActions {
+              width: auto;
+              flex-wrap: nowrap;
+              flex-direction: column;
+              justify-content: space-around;
+              flex: 0 1 auto;
+              .removeBtn {
+                font-family: "gotham_htfmedium", Sans-Serif;
+                letter-spacing: 0.075rem;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                width: 100%;
+                flex: 0 1 auto;
+                order: 2;
+                margin-bottom: 1rem;
+                padding: 0;
+                text-align: left;
+                text-decoration: underline;
+                border: none;
+                background: none;
+              }
+              .itemQuantity {
+                display: flex;
+                margin: 0;
+                button {
+                  border: 2px solid #e6e6e6;
+                  height: 48px;
+                  padding: 0;
+                  width: 32px;
+                  height: 32px;
+                  text-align: center;
+                  background: none;
+                }
+                span {
+                  background: #e6e6e6;
+                  padding: 0.75rem 2rem;
+                }
+              }
+            }
+            .itemPrice {
+              strong{
+                  font-size: 1.25rem;
+                  font-weight: bolder;
+                  line-height: 1.5;
+              }
+
+            }
+          }
+        }
+      }
+      .subtotal {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        p {
+          width: 30%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.25rem;
+          font-family: adobe-garamond-pro, times new roman, Serif;
+          line-height: 1.4em;
+          margin-bottom: 1rem;
+          color: #4d4d4d;
+        }
+      }
+    }
+  }
+}

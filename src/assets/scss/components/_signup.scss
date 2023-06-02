@@ -1,0 +1,190 @@
+.signUp {
+  padding: 2.5rem 1rem;
+  background-image: url("../../images/bg_chevron.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  border-bottom: 0.5rem solid #862633;
+  form {
+    width: 100%;
+    max-width: 100%;
+    .container {
+      max-width: 1440px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      .formText {
+        width: 50%;
+        font-size: 1.5rem;
+        text-align: left;
+        p {
+          line-height: 1.4em;
+          color: #4d4d4d;
+          font-family: adobe-garamond-italic, times new roman, Times, Sans-Serif;
+        }
+      }
+      .signupPromo {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        .loginInp {
+          position: relative;
+          width: 45%;
+          input {
+            outline: none;
+            font-size: 0.75rem;
+            padding: 1rem 1.2rem;
+            line-height: 1.2;
+            height: auto;
+            text-transform: uppercase;
+            background-color: rgba(255, 255, 255, 0.1);
+            font-weight: 500;
+            letter-spacing: 0.075rem;
+            width: 100%;
+            border: 1px solid transparent;
+            color: #4d4d4d;
+          }
+        }
+        .loginBtn {
+          width: 45%;
+          display: flex;
+          gap: 10px;
+          input {
+            background: #1a1a1a;
+            color: #fff;
+            min-width: 10rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.2s all ease-out;
+            cursor: pointer;
+            display: inline-block;
+            padding: 1rem 1.2rem;
+            font-family: "gotham", Sans-Serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-align: center;
+            &:hover {
+              transition: 0.2s all ease-out;
+              background: #272727;
+            }
+          }
+          .learnBTn {
+            background: 0 0;
+            color: #1a1a1a;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            font-family: gotham, Sans-Serif;
+            min-width: 10rem;
+            transition: 0.2s all ease-out;
+            cursor: pointer;
+            display: inline-block;
+            padding: 1rem 1.2rem;
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-align: center;
+            &:hover {
+              color: #1a1a1a;
+              border: 1px solid rgba(0, 0, 0, 0.7);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .signUp {
+    width: 100%;
+    form{
+      .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .formText{
+          width: 100%;
+          text-align: center;
+        }
+        .signupPromo{
+          .loginInp{
+            width: 50%;
+          }
+          .loginBtn{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .signUp {
+    width: 100%;
+    form{
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .signupPromo{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          .loginInp{
+            width: auto;
+          }
+          .loginBtn{
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .signUp {
+    width: 100%;
+    padding: 5px;
+    form{
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .formText{
+          p{
+            font-size: 16px;
+          }
+        }
+        .signupPromo{
+          width: 100%;
+          justify-content: flex-start;
+          display: flex;
+          .loginInp{
+            width: 100%;
+            font-size: 12px;
+            padding: 5px;
+            input{
+              padding: 10px;
+            }
+          }
+          .loginBtn{
+            width: 100%;
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,517 @@
+.header {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  .header_container {
+    align-items: center;
+    max-width: 1440px;
+    max-height: 4.375rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 20%;
+      margin: 20px;
+      img {
+        width: 100%;
+        object-fit: cover;
+
+        align-items: center;
+      }
+    }
+    .burgerMenu {
+      display: none;
+    }
+    .navBar {
+      display: flex;
+      width: 60%;
+      align-items: center;
+      justify-content: center;
+      .navList {
+        width: 100%;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        .navItem {
+          color: #000;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1;
+          text-transform: uppercase;
+          letter-spacing: 0.6px;
+          padding: 1.5rem 0;
+          font-family: "Gotham", Sans-Serif;
+          font-size: 12px;
+          line-height: 1;
+          letter-spacing: 0.6px;
+          font-weight: 600;
+          color: #1a1a1a;
+          cursor: pointer;
+          a {
+            font-size: 12px;
+            padding: 20px 0;
+            line-height: 1;
+            letter-spacing: 0.6px;
+            font-family: "Gotham", Sans-Serif;
+            font-weight: 600;
+            color: #1a1a1a;
+          }
+          .whiskyMenu {
+            display: none;
+            width: 100%;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            background-image: url("../../images/bg_chevron.jpg");
+            transition: all 0.5s ease-in-out;
+            .dropContainer {
+              max-width: 78rem;
+              margin: 0 auto;
+              display: flex;
+              .dropList {
+                width: 30%;
+                max-height: 450px;
+                padding: 5rem 0 4rem;
+                display: flex;
+                flex-wrap: wrap;
+                -webkit-columns: 3;
+                columns: 3;
+                .dropItem {
+                  display: inline-block;
+                  width: 100%;
+                  background-color: transparent;
+                  padding: 1.5rem 0;
+                  a {
+                    color: #1a1a1a;
+                    font-size: 0.75rem;
+                    font-family: "Gotham", Sans-Serif;
+                    font-weight: 700;
+                  }
+                }
+              }
+              .dropImg {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                a {
+                  .spiritTitle {
+                    font-family: "fgotham", Sans-Serif;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    color: #1a1a1a;
+                    margin: 1.5rem 0 0;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .navItem:nth-child(2) {
+          .itemBorder {
+            display: none;
+            border-bottom: 2px solid #000;
+          }
+        }
+        .navItem:nth-child(4) {
+          .itemBorder {
+            display: none;
+            border-bottom: 2px solid #000;
+          }
+        }
+        .navItem:nth-child(2):hover {
+          .itemBorder {
+            display: block;
+          }
+          .whiskyMenu {
+            display: block;
+          }
+        }
+        .navItem:nth-child(4):hover {
+          .itemBorder {
+            display: block;
+          }
+          .whiskyMenu {
+            display: block;
+          }
+        }
+      }
+      &.open {
+        display: block;
+      }
+    }
+    .headerIcons {
+      font-size: 1.25rem;
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .headerIcon {
+        padding-right: 8px;
+        display: flex;
+        padding: 0 6.4px;
+        cursor: pointer;
+        a {
+          color: #212529;
+          padding: 0 4px;
+          font-size: 1.25rem;
+        }
+      }
+    }
+    .shopIcon {
+      position: relative;
+      color: #212529;
+      padding: 0 4px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      .shopBase {
+        display: none;
+        position: absolute;
+        top: 220%;
+        right: 10%;
+        width: 450px;
+        background-color: #fff;
+        &.active {
+          display: block;
+        }
+        .shopList {
+          width: 100%;
+          position: relative;
+          .shopContentTitle {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #f2f2f2;
+          }
+          .closeBtn {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            color: #1a1a1a;
+          }
+          .shopItem {
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f2f2f2;
+            .shopCardImg {
+              width: 30%;
+              height: 150px;
+              padding: 5px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+            .shopCardInfo {
+              width: 70%;
+              .shopCardTitle {
+                text-align: center;
+              }
+              .quantity {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+              }
+              .deleteBtn {
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid black;
+                padding-bottom: 3px;
+                cursor: pointer;
+              }
+            }
+          }
+          .noItemText {
+            text-align: center;
+            padding-bottom: 5px;
+          }
+          .shoppingCartFooter {
+            flex: 0 1 auto;
+            width: 100%;
+            padding: 1.5rem;
+
+            .totalPrice {
+              padding-bottom: 1rem;
+              border-bottom: 1px solid #f2f2f2;
+              font-size: 1.25rem;
+              font-family: adobe-garamond-pro, times new roman, Serif;
+              line-height: 1.4em;
+              margin-bottom: 1rem;
+              color: #4d4d4d;
+              span {
+                float: right;
+              }
+            }
+            .productDetail {
+              display: block;
+              text-align: center;
+              font-size: 0.9rem;
+              font-weight: 400;
+              line-height: 1.5;
+              color: #212529;
+            }
+            .checkout {
+              width: 10rem;
+              padding: 15px;
+              display: block;
+              margin: 1rem auto;
+              background: #862633;
+              color: #fff;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 0.75rem;
+              line-height: 1.2;
+              letter-spacing: 2px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .langeuge {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    .header_container {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        text-align: center;
+        z-index: 500;
+        width: 30%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: #000;
+          transition: all 0.3s ease;
+
+          &.line1.open {
+            transform: rotate(45deg) translate(5px, 5px);
+          }
+
+          &.line2.open {
+            opacity: 0;
+          }
+
+          &.line3.open {
+            transform: rotate(-45deg) translate(5px, -5px);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .header {
+      width: 100%;
+      .header_container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          width: 35%;
+          img {
+            width: 100%;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .burgerNavBar {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          width: 100%;
+          padding: 8px 0 10px;
+          border-bottom: 0.1px solid #d3d2d2;
+          background-image: url("../../images/bg_chevron.jpg");
+          .navList {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .navItem {
+              color: #000;
+              font-size: 0.875rem;
+              font-weight: 400;
+              line-height: 1;
+              text-transform: uppercase;
+              letter-spacing: 0.6px;
+              padding: 1.5rem 0;
+              font-family: "Gotham", Sans-Serif;
+              font-size: 12px;
+              line-height: 1;
+              letter-spacing: 0.6px;
+              font-weight: 600;
+              color: #1a1a1a;
+              cursor: pointer;
+              a {
+                font-size: 12px;
+                padding: 20px 0;
+                line-height: 1;
+                letter-spacing: 0.6px;
+                font-family: "Gotham", Sans-Serif;
+                font-weight: 600;
+                color: #1a1a1a;
+              }
+            }
+          }
+          .burgerSocial {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .headerIcon {
+              padding-right: 8px;
+              display: flex;
+              padding: 0 6.4px;
+              cursor: pointer;
+              a {
+                color: #212529;
+                padding: 0 4px;
+                font-size: 1.25rem;
+              }
+            }
+          }
+          .navBar {
+            display: none;
+            .navList {
+              display: none;
+            }
+            &.open {
+              display: block;
+            }
+          }
+          .headerIcons {
+            width: 15%;
+            text-align: center;
+            z-index: 500;
+            .headerIcon:nth-child(5) {
+              display: none;
+            }
+            .headerIcon:nth-child(6) {
+              display: none;
+            }
+            .headerIcon:nth-child(7) {
+              display: none;
+            }
+          }
+        }
+        .navBar {
+          display: none;
+          .navList {
+            display: none;
+          }
+        }
+        .headerIcons {
+          font-size: 1rem;
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 788px) {
+  .header {
+    width: 100%;
+    .header_container {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      .logo {
+        width: 50% !important;
+        img {
+          width: 100%;
+          object-fit: cover;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20px;
+        height: 15px;
+        cursor: pointer;
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: #000;
+          transition: all 0.3s ease;
+
+          &.line1.open {
+            transform: rotate(45deg) translate(5px, 5px);
+          }
+
+          &.line2.open {
+            opacity: 0;
+          }
+
+          &.line3.open {
+            transform: rotate(-45deg) translate(5px, -5px);
+          }
+        }
+      }
+      .navBar {
+        display: none;
+        .navList {
+          display: none;
+        }
+      }
+      .headerIcons {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .header{
+    width: 100%;
+    .header_container{
+      width: 90%;
+      .logo{
+        width: 70%;
+      }
+    }
+  }
+}

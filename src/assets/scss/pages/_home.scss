@@ -1,0 +1,889 @@
+body {
+  height: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  .home {
+    width: 100%;
+    .slider {
+      width: 100%;
+      height: 800px;
+      display: flex;
+      position: relative;
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: 4;
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 70%
+          );
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .homeContent {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      left: 5%;
+      top: 0;
+      z-index: 20;
+      .homeInfo {
+        max-width: 31.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .italicHead {
+          display: inline-block;
+          margin-bottom: 1rem;
+          font-family: adobe-garamond-italic, times new roman, Times, Sans-Serif;
+          font-style: italic;
+          font-size: 1.5rem;
+          color: #fff;
+          position: relative;
+          &::before {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 1px;
+            top: 1rem;
+            border-top: 1px solid #fff;
+            margin-right: 15px;
+            opacity: 0.3;
+            left: -50px;
+          }
+          &::after {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 1px;
+            top: 1rem;
+            border-top: 1px solid #fff;
+            margin-right: 15px;
+            opacity: 0.3;
+            right: -60px;
+          }
+        }
+        .contentTitle {
+          margin: 1rem 0 1.875rem;
+          font-family: adobe-garamond-pro, times new roman, Serif;
+          line-height: 1.2;
+          font-size: 1.875rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #fff;
+        }
+        .contentInfo {
+          font-size: 1.25rem;
+          line-height: 1.4;
+          margin-bottom: 2rem;
+          color: #fff;
+          text-align: center;
+          font-family: adobe-garamond-pro, times new roman, Serif;
+        }
+      }
+    }
+    .singleMalts {
+      width: 100%;
+      background-color: #fff;
+      .row {
+        display: flex;
+        .bottles {
+          padding: 64px 96px;
+          width: 50%;
+          .product1 {
+            z-index: 1;
+            margin-right: -20px;
+            height: 338px;
+            will-change: transform;
+            position: relative;
+            -webkit-transform: translateX(var(--tx)) translateZ(1px);
+            transform: translateX(var(--tx)) translateZ(1px);
+            vertical-align: middle;
+            border-style: none;
+          }
+          .product2 {
+            margin-right: -30px;
+            z-index: 2;
+            height: 438px;
+            will-change: transform;
+            position: relative;
+            -webkit-transform: translateX(var(--tx)) translateZ(1px);
+            transform: translateX(var(--tx)) translateZ(1px);
+            vertical-align: middle;
+            border-style: none;
+          }
+          .product3 {
+            z-index: 3;
+            height: 558px;
+            will-change: transform;
+            position: relative;
+            -webkit-transform: translateX(var(--tx)) translateZ(1px);
+            transform: translateX(var(--tx)) translateZ(1px);
+            vertical-align: middle;
+            border-style: none;
+          }
+        }
+        .product4 {
+          z-index: 2;
+          margin-left: -30px;
+          height: 438px;
+          will-change: transform;
+          position: relative;
+          -webkit-transform: translateX(var(--tx)) translateZ(1px);
+          transform: translateX(var(--tx)) translateZ(1px);
+          vertical-align: middle;
+          border-style: none;
+        }
+        .product5 {
+          z-index: 1;
+          margin-left: -20px;
+          height: 338px;
+          will-change: transform;
+          position: relative;
+          -webkit-trawnsform: translateX(var(--tx)) translateZ(1px);
+          transform: translateX(var(--tx)) translateZ(1px);
+          vertical-align: middle;
+          border-style: none;
+        }
+      }
+      .prductInfo {
+        width: 50%;
+        padding: 64px 96px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        .italicTitle {
+          position: relative;
+          display: inline-block;
+          margin-bottom: 1rem;
+          font-family: adobe-garamond-italic, times new roman, Times, Sans-Serif;
+          font-style: italic;
+          font-size: 1.5rem;
+          -webkit-font-feature-settings: "swsh" 1;
+          font-feature-settings: "swsh" 1;
+          text-transform: none;
+          color: #000;
+          &::before {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 1px;
+            top: 1rem;
+            border-top: 1px solid #000;
+            margin-right: 15px;
+            opacity: 0.3;
+            left: -50px;
+          }
+          &::after {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 1px;
+            top: 1rem;
+            border-top: 1px solid #000;
+            margin-right: 15px;
+            opacity: 0.3;
+            right: -60px;
+          }
+        }
+        .infoTitle {
+          margin: 1.875rem 0;
+          font-family: adobe-garamond-pro, times new roman, Serif;
+          line-height: 1.2;
+          font-size: 1.875rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .infoCaption {
+          font-size: 1.25rem;
+          line-height: 1.4;
+          color: #4d4d4d;
+          text-align: center;
+          font-family: adobe-garamond-pro, times new roman, Serif;
+        }
+        .buttonTertiary {
+          border: 1px solid #000;
+          color: #000;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+    .boutique {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #fff;
+      position: relative;
+      .sectionCover {
+        margin: 0 auto;
+        width: 93%;
+        position: relative;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 99.2%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: 4;
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 70%
+          );
+        }
+        &:hover img {
+          transform: scale(1.05);
+          transition: all 1s ease;
+        }
+        .sectionImg {
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 512px;
+            object-fit: cover;
+            transition: all 1s ease;
+          }
+        }
+        .signPostContent {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 0 0 2.5rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 4;
+          color: #fff;
+          opacity: 1;
+          visibility: visible;
+          transition: opacity 0.2s, visibility 0.2s;
+          .italicTitle {
+            display: inline-block;
+            font-family: adobe-garamond-italic, times new roman, Times,
+              Sans-Serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 1.25rem;
+          }
+          .signPostHead {
+            max-width: 31.25rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 1.875rem;
+            margin-bottom: 1.875rem;
+          }
+          .signCaption {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: adobe-garamond-italic, times new roman, Times;
+          }
+          .signPostBtn {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .gallery {
+      width: 100%;
+      display: flex;
+      background-color: #fff;
+      padding: 15px 0;
+      .container {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+        .explore {
+          width: 50%;
+          position: relative;
+          &:hover {
+            .imgInfo {
+              transform: translateY(-2rem);
+              transition: 0.25s all ease-out;
+            }
+            img {
+              transform: scale(1.1);
+              transition: all 1s ease;
+            }
+          }
+          .leftImg {
+            width: 100%;
+            margin: 0 auto;
+            height: 512px;
+            position: relative;
+            overflow: hidden;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              z-index: 4;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0) 70%
+              );
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 1s ease;
+            }
+          }
+          .imgInfo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            z-index: 5;
+            bottom: 5%;
+            left: 5%;
+            transition: 0.25s all ease-out;
+            .italicTitle {
+              display: inline-block;
+              font-family: adobe-garamond-italic, times new roman, Times,
+                Sans-Serif;
+              font-style: italic;
+              font-size: 1.5rem;
+              color: #fff;
+              margin-bottom: 1.25rem;
+            }
+            .leftTitle {
+              font-weight: 400;
+              text-transform: uppercase;
+              font-size: 1.875rem;
+              margin-bottom: 1.875rem;
+              color: #fff;
+            }
+          }
+        }
+        .join {
+          width: 50%;
+          position: relative;
+          &:hover {
+            .imgInfo {
+              transform: translateY(-2rem);
+              transition: 0.25s all ease-out;
+            }
+            img {
+              transform: scale(1.1);
+              transition: all 1s ease;
+            }
+          }
+          .rightImg {
+            width: 100%;
+            height: 512px;
+            position: relative;
+            overflow: hidden;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              z-index: 4;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0) 70%
+              );
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 1s ease;
+            }
+          }
+          .imgInfo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            z-index: 5;
+            bottom: 5%;
+            left: 5%;
+            transition: 0.25s all ease-out;
+            .joinTitle {
+              display: inline-block;
+              font-family: adobe-garamond-italic, times new roman, Times,
+                Sans-Serif;
+              font-size: 1.5rem;
+              color: #fff;
+              margin-bottom: 1.25rem;
+            }
+            .rightTitle {
+              font-weight: 400;
+              text-transform: uppercase;
+              font-size: 1.875rem;
+              margin-bottom: 1.875rem;
+              color: #fff;
+            }
+            .rightText {
+              margin-bottom: 1.25rem;
+              width: 370px;
+              text-align: left;
+              font-size: 1.25rem;
+              line-height: 1.4;
+              color: rgba(255, 255, 255, 0.7);
+              font-family: adobe-garamond-italic, times new roman, Times;
+            }
+          }
+        }
+      }
+    }
+    .sixPillar {
+      width: 100%;
+      position: relative;
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: 0.25s all ease-out;
+        }
+      }
+      .sectionCover {
+        width: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 1s ease;
+        }
+      }
+      .sectionInfo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        position: absolute;
+        z-index: 5;
+        bottom: 0%;
+        left: 0%;
+        .italicTitle {
+          display: inline-block;
+          font-family: adobe-garamond-italic, times new roman, Times, Sans-Serif;
+          font-style: italic;
+          font-size: 1.5rem;
+          position: relative;
+          color: #fff;
+          margin-bottom: 1.25rem;
+          &::before {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 1px;
+            top: 1rem;
+            border-top: 1px solid #fff;
+            margin-right: 15px;
+            opacity: 0.3;
+            left: -50px;
+          }
+          &::after {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 1px;
+            top: 1rem;
+            border-top: 1px solid #fff;
+            margin-right: 15px;
+            opacity: 0.3;
+            right: -60px;
+          }
+        }
+        .pillarTitle {
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 1.875rem;
+          margin-bottom: 1.875rem;
+          color: #fff;
+        }
+        .pillarText {
+          max-width: 31.25rem;
+          font-size: 1.25rem;
+          line-height: 1.4;
+          color: #fff;
+          margin-bottom: 2rem;
+          text-align: center;
+          font-family: adobe-garamond-italic, times new roman, Times;
+        }
+      }
+    }
+    .signUp {
+      padding: 2.5rem 1rem;
+      background-image: url("../../images/bg_chevron.jpg");
+      background-repeat: repeat;
+      background-position: center;
+      border-bottom: 0.5rem solid #862633;
+      form {
+        width: 100%;
+        max-width: 100%;
+        .container {
+          max-width: 1440px;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .formText {
+            width: 50%;
+            font-size: 1.5rem;
+            margin-right: 5rem;
+            text-align: left;
+            p {
+              line-height: 1.4em;
+              color: #4d4d4d;
+            }
+          }
+          .signupPromo {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            .loginInp {
+              position: relative;
+              width: 50%;
+              input {
+                font-size: 0.75rem;
+                padding: 1rem 1.2rem;
+                line-height: 1.2;
+                height: auto;
+                text-transform: uppercase;
+                background-color: rgba(255, 255, 255, 0.1);
+                font-family: gotham_htfmedium, Sans-Serif;
+                font-weight: 500;
+                letter-spacing: 0.075rem;
+                width: 100%;
+                border: 1px solid transparent;
+                color: #4d4d4d;
+              }
+            }
+            .loginBtn {
+              width: 50%;
+              display: flex;
+              input {
+                background: #1a1a1a;
+                color: #fff;
+                min-width: 10rem;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                transition: 0.2s all ease-out;
+                cursor: pointer;
+                display: inline-block;
+                padding: 1rem 1.2rem;
+                font-family: gotham, Sans-Serif;
+                font-weight: 700;
+                font-size: 0.75rem;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                text-align: center;
+                &:hover {
+                  transition: 0.2s all ease-out;
+                  background: #272727;
+                }
+              }
+              .learnBTn {
+                margin-left: 1rem;
+                background: 0 0;
+                color: #1a1a1a;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                font-family: gotham, Sans-Serif;
+                min-width: 10rem;
+                transition: 0.2s all ease-out;
+                cursor: pointer;
+                display: inline-block;
+                padding: 1rem 1.2rem;
+                font-weight: 700;
+                font-size: 0.75rem;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                text-align: center;
+                &:hover {
+                  color: #1a1a1a;
+                  border: 1px solid rgba(0, 0, 0, 0.7);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .home {
+    width: 100%;
+    .singleMalts {
+      width: 100%;
+      .row {
+        .bottles {
+          padding: 25px 0 25px 25px !important;
+          min-width: 450px;
+        }
+        .prductInfo {
+          padding: 10px;
+          .italicTitle {
+            text-align: center;
+            font-size: 18px;
+          }
+          .infoTitle {
+            font-size: 20px;
+            text-align: center;
+          }
+          .infoCaption {
+            font-size: 16px;
+            text-align: center;
+          }
+          .buttonTertiary {
+            font-size: 10px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .gallery {
+      width: 100%;
+      .container {
+        .explore {
+          .imgInfo {
+            .italicTitle {
+              font-size: 16px;
+            }
+            .leftTitle {
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+        }
+        .join {
+          .imgInfo {
+            .joinTitle {
+              font-size: 16px;
+            }
+            .rightTitle {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .home {
+    .homeContent{
+      .homeInfo{
+        .italicHead{
+          font-size: 18px !important;
+        }
+        .contentTitle{
+           font-size: 22px !important;
+        }
+        .contentInfo{
+          font-size: 18px !important;
+        }
+        .buttonTertiary{
+          font-size: 0.70rem;
+          padding: 0.80rem 1.0rem;
+        }
+      }
+    }
+    .gallery{
+      width: 100%;
+       .container {
+        .explore {
+          .imgInfo {
+            .italicTitle {
+              font-size: 10px !important;
+            }
+            .leftTitle {
+              font-size: 18px !important;
+              text-align: center;
+            }
+          }
+        }
+        .join {
+          .imgInfo {
+            .joinTitle {
+              font-size: 16px !important;
+            }
+            .rightTitle {
+              font-size: 20px !important;
+            }
+            .rightText{
+              font-size: 16px!important;
+            }
+          }
+        }
+      }
+    }
+    .sixPillar{
+      .sectionInfo{
+        .italicTitle{
+          font-size: 16px !important;
+        }
+        .pillarTitle{
+          font-size: 20px !important;
+        }
+        .pillarText{
+          font-size: 14px !important;
+        }
+        .buttonTertiary{
+          padding: 0;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 720px){
+  .home {
+    .singleMalts{
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .bottles{
+          width: 100%;
+          padding: 50px 0 !important;
+        }
+        .prductInfo{
+          width: 100%;
+          padding: 0 20px;
+        }
+      }
+    }
+    .gallery{
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .explore{
+          width: 100% !important;
+        }
+        .join{
+          width: 100% !important;
+        }
+      }
+    }
+    .sixPillar{
+      .sectionInfo{
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .home {
+    .singleMalts{
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .bottles{
+          width: 100%;
+
+        }
+        .prductInfo{
+          width: 100%;
+          padding: 0 20px;
+        }
+      }
+    }
+    .gallery{
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .explore{
+          width: 100% !important;
+        }
+        .join{
+          width: 100% !important;
+        }
+      }
+    }
+    .sixPillar{
+      .sectionInfo{
+        margin: 0 !important;
+      }
+    }
+  }
+}
