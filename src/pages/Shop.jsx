@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
+// import Components
 import PrimaryButton from "../components/PrimaryButton";
-// import images
+// import Images
 import JoinImg from "../assets/images/Join-TMS-Macallan-bar-1.png";
 import Wallpaper from "../assets/images/shop.jpg";
 import MacallanCover from "../assets/images/macallan-distil-your-world-new-york-ballot-opening.jpeg";
@@ -13,7 +13,7 @@ import ProductGift5 from "../assets/images/MAC-2022-Lifestyle-Accessories-Photog
 import ProductGift6 from "../assets/images/MAC-2022-Lifestyle-Accessories-Photography-Stirrers16x9-72dpi.jpg";
 import journeyBg from "../assets/images/MMJ (1).png";
 
-// import redux
+// import Redux
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../redux/product/cartSlice";
 

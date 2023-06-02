@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { object, string, number } from "yup";
-import Swal from "sweetalert2/dist/sweetalert2.js";
 
+// Import Yup
+import { object, string, number } from "yup";
+// Import SweetAlert
+import Swal from "sweetalert2/dist/sweetalert2.js";
+// Import S-Alert Scss
 import "sweetalert2/src/sweetalert2.scss";
 
 const NewsLetter = () => {
@@ -83,7 +86,7 @@ const NewsLetter = () => {
                     onChange={handleChange}
                     value={loginSchema.name}
                   />
-                  <div className="formItemError">First name is required</div>
+                  
                 </div>
                 <div className="formInput">
                   <label className="firstName">LAST NAME*</label>
@@ -93,7 +96,7 @@ const NewsLetter = () => {
                     onChange={handleChange}
                     value={loginSchema.lastname}
                   />
-                  <div className="formItemError">Last name is required</div>
+                  
                 </div>
               </div>
               <div className="form-row">
@@ -105,9 +108,6 @@ const NewsLetter = () => {
                     value={loginSchema.email}
                     type="email"
                   />
-                  <div className="formItemError">
-                    Please enter your email address
-                  </div>
                 </div>
                 <div className="formInput">
                   <label className="firstName">DATE OF BIRTH*</label>
@@ -143,9 +143,7 @@ const NewsLetter = () => {
                       value={loginSchema.year}
                     />
                   </div>
-                  <div className="formItemError">
-                    Valid date of birth is required
-                  </div>
+                  
                 </div>
               </div>
               <div className="form-row">
@@ -159,9 +157,7 @@ const NewsLetter = () => {
                     <option value={"RU"}>Russia</option>
                     <option value={"GE"}>Georgia</option>
                   </select>
-                  <div className="formItemError">
-                    Please select your country
-                  </div>
+                  
                 </div>
                 <div className="formInput">
                   <label className="firstName">NEAREST CITY*</label>
@@ -171,9 +167,7 @@ const NewsLetter = () => {
                     value={loginSchema.city}
                     name="city"
                   />
-                  <div className="formItemError">
-                    Please add your nearest city
-                  </div>
+                  
                 </div>
               </div>
               <div className="confirmation">

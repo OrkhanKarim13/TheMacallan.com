@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// Import Icons
 import {
   FaAngleDown,
   FaMapMarkerAlt,
@@ -7,11 +8,15 @@ import {
   FaUser,
   FaWeightHanging,
 } from "react-icons/fa";
+
+// Import Redux
 import { useDispatch, useSelector } from "react-redux";
+import { removeProduct } from "../redux/product/cartSlice";
 import { Link, NavLink } from "react-router-dom";
+
+// import Images
 import logo from "../assets/images/logo_dark.png";
 import DropImg from "../assets/images/womanbarel.jpg";
-import { removeProduct } from "../redux/product/cartSlice";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +40,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  console.log(totalPrice);
+
 
   return (
     <header className="header">

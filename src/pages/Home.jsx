@@ -1,8 +1,10 @@
-import React from "react";
+// Import Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
+
+// Import Images
 import img from "../assets/images/home1.jpg";
 import img2 from "../assets/images/home2.jpg";
 import img3 from "../assets/images/home3.jpg";
@@ -16,6 +18,8 @@ import Boutiquebg from "../assets/images/btgbg.jpg";
 import leftImg from "../assets/images/Distillery_2.png";
 import rightImg from "../assets/images/TMS hero cropped.jpg";
 import PillarImg from "../assets/images/distillery-tour-background.jpg";
+
+// Import Components
 import PrimaryButton from "../components/PrimaryButton";
 
 const Home = () => {

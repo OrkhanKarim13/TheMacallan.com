@@ -1,5 +1,4 @@
-import React from "react";
-
+// Import Icons
 import {
   Accordion,
   AccordionItem,

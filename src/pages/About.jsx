@@ -1,11 +1,14 @@
-import React from "react";
-import maghellan from "../assets/images/Alexander-Reid.png";
+// Import Components
 import PrimaryButton from "../components/PrimaryButton";
+
+// Import Images
+import maghellan from "../assets/images/Alexander-Reid.png";
 import SpirtImage from "../assets/images/carrusel-macallan-3-horizontal.jpg";
 import bottles from "../assets/images/clipping_3YDyCi_668c.webp";
 import ForestImage from "../assets/images/forest.png";
 import barrels from "../assets/images/barrel.png";
 import rightImg from "../assets/images/TMS hero cropped.jpg";
+
 const About = () => {
   return (
     <section className="about">

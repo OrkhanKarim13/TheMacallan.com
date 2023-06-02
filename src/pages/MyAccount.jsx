@@ -1,20 +1,15 @@
-import React from "react";
+// Import Icons
 import {
   FaReacteurope,
   FaRegHandPointer,
   FaUncharted,
   FaUserCog,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 
 const MyAccount = () => {
-
-
-
-
-
-
   return (
     <section className="myAcc">
       <div className="topBackground">

@@ -1,5 +1,8 @@
-import React from "react";
+// Import Components
 import PrimaryButton from "../components/PrimaryButton";
+import ShopAccordion from "../components/ShopAccordion";
+
+// Import Images
 import slider2Img1 from "../assets/images/macallan-A-Night-On-Earth-In-Scotland (1).jpg";
 import slider2Img2 from "../assets/images/sliderProduct2.jpg";
 import slider2Img3 from "../assets/images/mac-2020-classic-cut-mood-photo-le5000-300dpi-1.jpg";
@@ -11,12 +14,14 @@ import slideProduct3 from "../assets/images/slideProduct3.jpg";
 import slideProduct5 from "../assets/images/singleProduct6jpg.jpg";
 import whiskyOrange from "../assets/images/Whisky_neat_in_glass_festive copy.jpg";
 import MacallanGift from "../assets/images/ANOE (1)_1.jpg";
+
+// Import Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaMapMarker } from "react-icons/fa";
 import { Autoplay, FreeMode } from "swiper";
 import "swiper/css/free-mode";
 import "swiper/css";
-import ShopAccordion from "../components/ShopAccordion";
+// Import Icons
+import { FaMapMarker } from "react-icons/fa";
 
 const SingleProduct = () => {
   return (

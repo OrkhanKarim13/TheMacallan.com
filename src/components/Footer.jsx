@@ -1,5 +1,6 @@
-import React from "react";
+// Import Images
 import FooterLogo from "../assets/images/estate_logo_0.png";
+// Import icons
 import {
   FaAngleRight,
   FaFacebookF,
@@ -8,7 +9,9 @@ import {
   FaYoutube,
   FaCommentDollar,
 } from "react-icons/fa";
+// Import Pages
 import About from "../pages/About";
+
 import { Link } from "react-router-dom";
 
 

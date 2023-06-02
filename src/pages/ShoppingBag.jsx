@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+// Import Redux
 import { useSelector, useDispatch } from "react-redux";
 import { decrementProduct, incrementProduct } from "../redux/product/cartSlice";
-import { FaLongArrowAltLeft } from "react-icons/fa";
 import { removeProduct } from "../redux/product/cartSlice";
+// Import Icons
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 const ShoppingBag = () => {
   const dispatch = useDispatch();
