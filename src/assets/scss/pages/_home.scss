@@ -691,7 +691,7 @@ body {
       .row {
         .bottles {
           padding: 25px 0 25px 25px !important;
-          min-width: 450px;
+          width: 450px;
         }
         .prductInfo {
           padding: 10px;
@@ -822,6 +822,9 @@ body {
         .bottles{
           width: 100%;
           padding: 50px 0 !important;
+          .product5{
+            display: none;
+          }
         }
         .prductInfo{
           width: 100%;
@@ -858,8 +861,21 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         .bottles{
-          width: 100%;
-
+          width: 100% !important;
+          display: flex;
+          justify-content: center;
+          .product1{
+            display: none;
+          }
+          .product2{
+            display: none;
+          }
+          .product4{
+            display: none;
+          }
+          .product5{
+            display: none;
+          }
         }
         .prductInfo{
           width: 100%;
@@ -877,6 +893,11 @@ body {
         }
         .join{
           width: 100% !important;
+          .imgInfo{
+            .rightText{
+              width: 100% !important;
+            }
+          }
         }
       }
     }
