@@ -14,7 +14,7 @@ import NewsLetter from "./pages/NewsLetter";
 import Shop from "./pages/Shop";
 import ShoppingBag from "./pages/ShoppingBag";
 import SingleProduct from "./pages/SingleProduct";
-// Import Icons
+
 import { fetchProduct } from "./redux/product/productSlice";
 
 
@@ -27,11 +27,6 @@ const App = () => {
  
   },[dispatch])
 
-
-  
-
-
-
   return (
     <>
       <Header />
@@ -39,7 +34,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/singleProduct" element={<SingleProduct />} />
+        <Route path="/singleProduct/:id" element={<SingleProduct />} />
         <Route path="/myAccount" element={<MyAccount />} />
         <Route path="/newsletter" element={<NewsLetter />} />
         <Route path="/shoppingbag" element={<ShoppingBag />} />

@@ -22,8 +22,29 @@ import "swiper/css/free-mode";
 import "swiper/css";
 // Import Icons
 import { FaMapMarker } from "react-icons/fa";
+import axios from "axios";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const SingleProduct = () => {
+  const { id } = useParams();
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    getsingleProduct();
+  },);
+
+  const getsingleProduct = async () => {
+    try {
+      await axios
+        .get(`http://localhost:5000/api/products/${id}`)
+        .then((res) => {
+          setData(res.data);
+        });
+    } catch (error) {
+      console.log(error)
+    }
+  };
   return (
     <section className="singleProduct">
       <div className="container">
@@ -58,14 +79,14 @@ const SingleProduct = () => {
             </Swiper>
           </div>
           <div className="productDetails">
-            <p className="detailsHead">ABV : 43% | VOLUME : 700ML</p>
-            <h1 className="detailsTitle">A NIGHT ON EARTH IN SCOTLAND</h1>
+            <p className="detailsHead">{data?.details}</p>
+            <h1 className="detailsTitle">{data?.name}</h1>
             <div className="details">
               <p className="productInfo">For special moments worth sharing.</p>
             </div>
             <div className="buttons">
               <p className="shopPrice">
-                <span className="price">£105.00</span>
+                <span className="price">£{data?.price}</span>
                 <span>PRICE INCLUDES UK VAT AND DUTY</span>
               </p>
               <button className="addBtn">ADD TO BAG</button>
@@ -86,7 +107,7 @@ const SingleProduct = () => {
               </p>
             </div>
             <div className="accardions">
-              <ShopAccordion/>
+              <ShopAccordion />
             </div>
           </div>
         </div>

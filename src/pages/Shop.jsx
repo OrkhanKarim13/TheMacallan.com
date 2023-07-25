@@ -59,7 +59,7 @@ const Shop = () => {
             {products?.map((product) => {
               return (
                 <li className="shopProduct" key={product.id}>
-                  <Link to="/singleProduct">
+                  <Link to={`/singleProduct/${product?.id}`}>
                     <div className="productCard">
                       <div className="productImage">
                         <img

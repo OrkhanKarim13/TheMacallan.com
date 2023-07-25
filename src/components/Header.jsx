@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 // Import Icons
 import {
   FaAngleDown,
@@ -12,7 +13,6 @@ import {
 // Import Redux
 import { useDispatch, useSelector } from "react-redux";
 import { removeProduct } from "../redux/product/cartSlice";
-import { Link, NavLink } from "react-router-dom";
 
 // import Images
 import logo from "../assets/images/logo_dark.png";
